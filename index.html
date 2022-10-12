@@ -6,82 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="evgeniy, sv, resume">
     <meta name="description" content="Это сайт - резюме Евгения Петровского">
+    <link rel="stylesheet" href="styles.css">
     <title>Evgeniy Resume</title>
 </head>
 <body>
 
-    <img src="imgs/avatar.jpg" alt="Евгений Петровский" width="200">
-   
-    <h1>Евгений Петровский</h1>
+    <div class="container">  
 
-    <p>Я занимаюсь <strong>Инфобизнесом и фрилансом</strong>, создаю сайты в онлайн-сервисе <strong>Тильда</strong>, системе <strong>WordPress</strong>, конструкторе сайтов <strong>Mobirise</strong></p>
-
-    <p>Я люблю <em>ездить на велосипеде, создовать интернет-проекты и программировать</em></p>
+    <div class="info"> 
+        <img src="imgs/avatar.jpg" alt="Евгений Петровский" class="avatar">
     
-    <h4>Список социальных сетй:</h4>
+        <div class="info-text"> 
+        <h1>Евгений Петровский</h1>
 
-    <a href="https://vk.com/evgenpetrovskiy" target="_blank">ВКонтакте</a>
-    |
-    <a href="https://t.me/evgen_piligrim" target="_blank">Telegram</a>
-    |
-    <a href="https://www.youtube.com/channel/UC68dq7Kr7mLV5JXJF4kDtVg" target="_blank">YouTube</a>
+        <p>Я занимаюсь <strong>Инфобизнесом и фрилансом</strong>, создаю сайты в онлайн-сервисе <strong>Тильда</strong>, системе <strong>WordPress</strong>, конструкторе сайтов <strong>Mobirise</strong></p>
 
-    <h2>Мои хобби</h2>
+        <p>Я люблю <em>ездить на велосипеде, создовать интернет-проекты и программировать</em></p>
+        
+        <h4>Список социальных сетй:</h4>
 
-    <ol>
-        <li>Велосипед</li>
-        <li>Плавание</li>
-        <li>Литература</li>
-        <li>Кулинария</li>
-    </ol>
+        <a href="https://vk.com/evgenpetrovskiy" target="_blank">ВКонтакте</a>
+        |
+        <a href="https://t.me/evgen_piligrim" target="_blank">Telegram</a>
+        |
+        <a href="https://www.youtube.com/channel/UC68dq7Kr7mLV5JXJF4kDtVg" 
+        target="_blank">YouTube</a>
+        </div>
+    </div>
 
-    <h2>Опыт работы</h2>
+    <div class="card bg-green">
+        <h2>Мои хобби</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Биржа фриланса Kwork</td>
-                <td>Frontend</td>
-                <td>2020-2022</td>
-            </tr>
-            <tr>
-                <td>Барбершоп CUTNROOL</td>
-                <td>Frontend</td>
-                <td>2021-2022</td>
-            </tr>
-           </tbody>
-    </table>
+            <ol class="list">
+                <li>Велосипед</li>
+                <li>Плавание</li>
+                <li>Литература</li>
+                <li>Кулинария</li>
+            </ol>
+        </div> 
+
+    <div class="card bg-red">  
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Биржа фриланса Kwork</td>
+                        <td>Frontend</td>
+                        <td>2020-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Барбершоп CUTNROOL</td>
+                        <td>Frontend</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
     
-    <h2>Связаться со мной</h2>
+    <div class="card bg-yellow" class="card">  
+        <h2>Мои проекты</h2>
 
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" 
-            placeholder="Введите имя">
-        </div>
+        <ul class="link-list">
+            <li><p>
+                <a href="https://q.ark357.org.ru/sv/" target="_blank">Сайт-визитка</a>
+                </p></li>
+            <li><p>
+                <a href="https://brig19.net.ru" target="_blank">Онлайн школа</a>
+                </p></li>
+            <li><p>
+                <a href="https://d1.brig19.net.ru" target="_blank">Доставка пиццы</a>
+                </p></li>
+            <li><p>
+                <a href="https://cutnrool.ark357.net.ru" target="_blank">Курсы барберов</a>
+                </p></li>
+            <li><p>
+                <a href="https://q.ark357.org.ru/rsya/" target="_blank">Страница подписки</a>
+                </p></li> 
+        </ul>
+    </div> 
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" 
-            placeholder="Введите email">
-        </div>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
 
-        <div>
-            <label for="message">Ваше Сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" 
-            placeholder="Введите сообщение..."></textarea>
-        </div>
+         <div class="form-row">
+            
+            <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" 
+                    placeholder="Введите имя">
+                </div>
 
-        <input type="submit" value="Отправить!">
-    </form>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" 
+                    placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше Сообщение:</label>
+                <textarea id="message" cols="20" rows="5" 
+                placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <input type="submit" value="Отправить!" class="btn">
+        </form>
+        <br>
+        <br>
+        <br>
+    </div>
 </body>
 </html>
